@@ -19,3 +19,10 @@
 .new-photo-area img {
     visibility: hidden;
 }
+.cropper-buttons,.form-group.form-error {
+    padding-left:10px;
+}
+.cropper-buttons button{
+	width:120px;
+	margin-bottom:5px;
+}

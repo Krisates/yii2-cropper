@@ -1,14 +1,14 @@
 <?php
 
-namespace budyaga\cropper;
+namespace krisates\cropper;
 
-use budyaga\cropper\assets\CropperAsset;
+use krisates\cropper\assets\CropperAsset;
 use yii\base\InvalidConfigException;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
 use Yii;
 
-class Widget extends InputWidget
+class UploadLogo extends InputWidget
 {
     public $uploadParameter = 'file';
     public $width = 200;
@@ -101,7 +101,7 @@ class Widget extends InputWidget
         if (!isset(Yii::$app->i18n->translations['cropper']) && !isset(Yii::$app->i18n->translations['cropper/*'])) {
             Yii::$app->i18n->translations['cropper'] = [
                 'class' => 'yii\i18n\PhpMessageSource',
-                'basePath' => '@budyaga/cropper/messages',
+                'basePath' => '@krisates/cropper/messages',
                 'forceTranslation' => true,
                 'fileMap' => [
                     'cropper' => 'cropper.php'

@@ -25,5 +25,6 @@ return [
     'ONLY_POST_REQUEST' => '必须使用POST请求',
     'UPLOAD_ANOTHER_PHOTO' => '重新上传',
     'TOO_BIG_ERROR' => '上传图片的大小超出了限制 ({size} Mb)',
-    'EXTENSION_ERROR' => '仅允许上传以下格式的图片: {formats}'
+    'EXTENSION_ERROR' => '仅允许上传以下格式的图片: {formats}',
+    'BTN_SAVE' => 'Save'
 ];

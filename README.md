@@ -1,6 +1,6 @@
 Cropper
 ===========
-Yii-Framework extension for uploading and cropping images
+Yii-Framework extension (modified krivochenko/yii2-cropper) for uploading and cropping images
 
 Installation
 ------------
@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist budyaga/yii2-cropper "*"
+php composer.phar require --prefer-dist krisates/yii2-cropper "*"
 ```
 
 or add
 
 ```
-"budyaga/yii2-cropper": "*"
+"krisates/yii2-cropper": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -27,18 +27,15 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```
-use budyaga\cropper\Widget;
+use krisates\cropper\UploadLogo;
 ```
 
 
 ```
 <?php $form = ActiveForm::begin(['id' => 'form-profile']); ?>
-    <?php echo $form->field($model, 'photo')->widget(Widget::className(), [
+    <?php echo $form->field($model, 'photo')->widget(UploadLogo::className(), [
         'uploadUrl' => Url::toRoute('/user/user/uploadPhoto'),
     ]) ?>
-    <div class="form-group">
-        <?php echo Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>
-    </div>
 <?php ActiveForm::end(); ?>
 ```
 Widget has following properties:
@@ -65,7 +62,7 @@ public function actions()
 {
     return [
         'uploadPhoto' => [
-            'class' => 'budyaga\cropper\actions\UploadAction',
+            'class' => 'krisates\cropper\actions\UploadAction',
             'url' => 'http://your_domain.com/uploads/user/photo',
             'path' => '@frontend/web/uploads/user/photo',
         ]

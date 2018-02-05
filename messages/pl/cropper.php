@@ -9,5 +9,6 @@ return [
     'ONLY_POST_REQUEST' => 'Tylko żądania POST są obsługiwane',
     'UPLOAD_ANOTHER_PHOTO' => 'Wybierz inne zdjęcie',
     'TOO_BIG_ERROR' => 'Maksymalny rozmiar obrazka to ({size} Mb)',
-    'EXTENSION_ERROR' => 'Dozwolone są tylko formaty: {formats}'
+    'EXTENSION_ERROR' => 'Dozwolone są tylko formaty: {formats}',
+    'BTN_SAVE' => 'Save'
 ];

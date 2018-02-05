@@ -8,7 +8,7 @@ use yii\base\InvalidConfigException;
 use yii\web\BadRequestHttpException;
 use yii\web\Response;
 use yii\web\UploadedFile;
-use budyaga\cropper\Widget;
+use krisates\cropper\UploadLogo;
 use yii\imagine\Image;
 use Imagine\Image\Box;
 use Yii;
@@ -30,7 +30,7 @@ class UploadAction extends Action
      */
     public function init()
     {
-        Widget::registerTranslations();
+        UploadLogo::registerTranslations();
         if ($this->url === null) {
             throw new InvalidConfigException(Yii::t('cropper', 'MISSING_ATTRIBUTE', ['attribute' => 'url']));
         } else {

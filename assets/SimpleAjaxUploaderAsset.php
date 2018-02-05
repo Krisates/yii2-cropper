@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sergey
- * Date: 22.11.2015
- * Time: 19:20
- */
 
-namespace budyaga\cropper\assets;
+namespace krisates\cropper\assets;
 
 
 use yii\web\AssetBundle;
