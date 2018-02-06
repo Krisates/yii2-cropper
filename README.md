@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist krisates/yii2-cropper "*"
+php composer.phar require --prefer-dist Krisates/yii2-cropper "*"
 ```
 
 or add
 
 ```
-"krisates/yii2-cropper": "*"
+"Krisates/yii2-cropper": "*"
 ```
 
 to the require section of your `composer.json` file.
